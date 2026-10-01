@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grip It and Rip It is Dan's bold burger and comfort-food truck, serving Austin, Texas."
+    />
+    <title>Grip It and Rip It | Austin Food Truck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Grip It and Rip It home">
+        <span class="brand-mark" aria-hidden="true">GIR</span>
+        <span>Grip It<br />&amp; Rip It</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our story</a>
+        <a href="#find-us">Find us</a>
+        <a href="#catering">Catering</a>
+      </nav>
+      <button class="button button-small order-trigger">Order ahead <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div><div class="checker"></div>
+          <span class="hero-burger">🍔</span>
+          <span class="flame flame-one">✦</span><span class="flame flame-two">✦</span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Austin, Texas · Since 2024</p>
+          <h1>Big flavor.<br /><em>No brakes.</em></h1>
+          <p class="hero-text">Dan’s rolling kitchen for smash burgers, crispy fries, and the kind of food worth pulling over for.</p>
+          <div class="hero-actions">
+            <button class="button order-trigger">Order ahead <span aria-hidden="true">↗</span></button>
+            <a class="text-link" href="#find-us">Find today’s stop <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-stamp">made<br />to<br />move</div>
+      </section>
+
+      <section class="ticker" aria-label="Highlights">
+        <div>SMASHED FRESH <span>✦</span> CRISPY BY DESIGN <span>✦</span> TEXAS-SIZED APPETITE <span>✦</span> SMASHED FRESH <span>✦</span> CRISPY BY DESIGN <span>✦</span></div>
+      </section>
+
+      <section id="menu" class="menu-section section">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> Worth the mess</p><h2>THE GOOD STUFF</h2></div>
+          <p>Simple ingredients, loud flavors. Every order is made fresh at the window.</p>
+        </div>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="active" role="tab" aria-selected="true" data-category="burgers">Burgers</button>
+          <button role="tab" aria-selected="false" data-category="sides">Sides</button>
+          <button role="tab" aria-selected="false" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid" id="menu-grid">
+          <article class="menu-card" data-category="burgers"><div class="menu-icon burger-icon">≋</div><div><h3>The Full Send</h3><p>Double smashed patties, American cheese, shredded lettuce, pickles, comeback sauce.</p></div><strong>$13</strong></article>
+          <article class="menu-card" data-category="burgers"><div class="menu-icon burger-icon">≋</div><div><h3>Grip It Classic</h3><p>Single smashed patty, American cheese, grilled onion, house pickles.</p></div><strong>$10</strong></article>
+          <article class="menu-card" data-category="burgers"><div class="menu-icon burger-icon">≋</div><div><h3>The Burnout</h3><p>Double patty, pepper jack, jalapeño relish, chipotle mayo.</p></div><strong>$14</strong></article>
+          <article class="menu-card" data-category="sides" hidden><div class="menu-icon">⌁</div><div><h3>Rip It Fries</h3><p>Seasoned crispy fries with house comeback sauce.</p></div><strong>$5</strong></article>
+          <article class="menu-card" data-category="sides" hidden><div class="menu-icon">⌁</div><div><h3>Loaded Pit Stop</h3><p>Fries, cheese sauce, grilled onions, pickled jalapeños.</p></div><strong>$8</strong></article>
+          <article class="menu-card" data-category="sides" hidden><div class="menu-icon">⌁</div><div><h3>Roadside Slaw</h3><p>Crunchy cabbage, apple cider dressing, fresh herbs.</p></div><strong>$4</strong></article>
+          <article class="menu-card" data-category="drinks" hidden><div class="menu-icon">◌</div><div><h3>Cold Brew Tea</h3><p>Black tea, lemon, and a little bit of sweet.</p></div><strong>$4</strong></article>
+          <article class="menu-card" data-category="drinks" hidden><div class="menu-icon">◌</div><div><h3>Topo Chico</h3><p>Mineral water. Extra cold.</p></div><strong>$3</strong></article>
+          <article class="menu-card" data-category="drinks" hidden><div class="menu-icon">◌</div><div><h3>Seasonal Shake</h3><p>Ask what Dan’s spinning today.</p></div><strong>$7</strong></article>
+        </div>
+        <p class="menu-note">Vegetarian? Ask about our rotating meatless special at the window.</p>
+      </section>
+
+      <section id="story" class="story-section">
+        <div class="story-photo" role="img" aria-label="A freshly made smash burger with fries"></div>
+        <div class="story-copy"><p class="eyebrow"><span></span> Meet Dan</p><h2>BUILT FOR<br />THE HUNGRY.</h2><p>Grip It and Rip It started with one battered griddle, a love for a perfect crust, and a belief that good food doesn’t need a dining room.</p><p>We make the kind of burgers that make your sleeves messy and your day better. No fuss. No shortcuts. Just get in line.</p><a class="text-link" href="#catering">More about the truck <span aria-hidden="true">→</span></a></div>
+      </section>
+
+      <section id="find-us" class="find-section section">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> Catch us out there</p><h2>WHERE WE PARKIN’?</h2></div><p>Our weekly route is always rolling. Here’s where to find the truck next.</p></div>
+        <div class="location-card">
+          <div class="pin" aria-hidden="true">⌖</div>
+          <div><p class="location-label">Today · 11:30 AM–2:30 PM</p><h3>Meanwhile Brewing</h3><p>3901 Promontory Point Dr · Austin, TX</p></div>
+          <a class="button button-light" href="https://maps.google.com/?q=Meanwhile+Brewing+Austin" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="schedule"><div><span>THU</span><strong>11:30–2:30</strong><p>Meanwhile Brewing</p></div><div><span>FRI</span><strong>5:00–9:00</strong><p>Cosmic Coffee</p></div><div><span>SAT</span><strong>12:00–8:00</strong><p>Armadillo Den</p></div></div>
+      </section>
+
+      <section id="catering" class="catering-section">
+        <div><p class="eyebrow"><span></span> Bring the truck</p><h2>YOUR PARTY.<br /><em>OUR GRIDDLE.</em></h2></div>
+        <div><p>Office lunches, birthdays, weddings, block parties—we’ll bring the good kind of chaos. Tell us about your event and we’ll take it from there.</p><a class="button button-light" href="mailto:dan@gripitandripit.com?subject=Catering%20inquiry">Ask about catering <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-mark">GIR</span><strong>Grip It<br />&amp; Rip It</strong></div>
+      <div><h3>Stay in the loop</h3><p>Stops, specials, and zero junk mail.</p><form class="signup-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button aria-label="Subscribe">→</button></form><p class="form-message" aria-live="polite"></p></div>
+      <div class="footer-links"><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a><a href="mailto:dan@gripitandripit.com">dan@gripitandripit.com</a><p>© 2026 Grip It and Rip It</p></div>
+    </footer>
+
+    <dialog class="order-dialog" aria-labelledby="order-title">
+      <button class="dialog-close" aria-label="Close order form">×</button>
+      <p class="eyebrow"><span></span> Skip the line</p><h2 id="order-title">ORDER AHEAD</h2>
+      <p>Online ordering is opening soon. Leave your email and we'll let you know when it is ready.</p>
+      <form class="waitlist-form"><label for="waitlist-email">Email address</label><input id="waitlist-email" type="email" required placeholder="you@example.com" /><button class="button" type="submit">Join the list</button><p class="form-message" aria-live="polite"></p></form>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
